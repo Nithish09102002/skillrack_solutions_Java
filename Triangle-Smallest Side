@@ -1,0 +1,14 @@
+import java.util.*;
+public class Hello {
+
+    public static void main(String[] args) {
+	Scanner input=new Scanner(System.in);
+	int x=input.nextInt();
+	int y=input.nextInt();
+	int z=input.nextInt();
+	if(x<=y && x<=z) System.out.print(x);
+	else if(y<=x && y<=z) System.out.print(y);
+	else System.out.print(z);
+
+	}
+}
