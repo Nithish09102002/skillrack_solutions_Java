@@ -1,0 +1,25 @@
+import java.util.*;
+public class Hello {
+
+    public static void main(String[] args) {
+	Scanner input=new Scanner(System.in);
+	char C=input.next().charAt(0);
+	switch(C){
+	    case 'r':
+	    case 'R':
+	        System.out.print("RED");
+	        break;
+	    case 'g':
+	    case 'G':
+	        System.out.print("GREEN");
+	        break;
+	    case 'b':
+	       case 'B':
+	           System.out.print("BLUE");
+	           break;
+	       default:
+	       System.out.print("UNDEFINED");
+	}
+
+	}
+}
