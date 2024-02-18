@@ -1,0 +1,12 @@
+import java.util.*;
+public class Hello {
+
+    public static void main(String[] args) {
+	Scanner input=new Scanner(System.in);
+	int N=input.nextInt();
+	if(N==0)System.out.print("zero");
+	else if(N>0)System.out.print("positive");
+	else System.out.print("negative");
+
+	}
+}
