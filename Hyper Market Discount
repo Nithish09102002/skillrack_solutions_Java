@@ -1,0 +1,11 @@
+import java.util.*;
+
+public class Hello {
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int B = input.nextInt();
+        int res = (B > 2000) ? (int)(B - (B * 0.1)) : B;
+        System.out.print(res);
+    }
+}
