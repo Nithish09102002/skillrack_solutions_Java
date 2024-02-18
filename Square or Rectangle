@@ -1,0 +1,12 @@
+import java.util.*;
+public class Hello {
+
+    public static void main(String[] args) {
+	Scanner input=new Scanner(System.in);
+	int L=input.nextInt();
+	int B=input.nextInt();
+	if(L==B)System.out.print("SQUARE");
+	else System.out.print("RECTANGLE");
+
+	}
+}
