@@ -1,0 +1,15 @@
+import java.util.*;
+public class Hello {
+
+    public static void main(String[] args) {
+		Scanner input=new Scanner(System.in);
+		int x=input.nextInt();
+		int y=input.nextInt();
+		for(int i=1;;i++){
+		    System.out.print(x*i+" ");
+		    if(x*i % y ==0)break;
+		   
+		}
+
+	}
+}
