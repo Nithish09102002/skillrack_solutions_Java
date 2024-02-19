@@ -1,0 +1,14 @@
+import java.util.*;
+public class Hello {
+
+    public static void main(String[] args) {
+	Scanner input=new Scanner(System.in);
+	int x=input.nextInt();
+	int y=input.nextInt();
+	for(int i=x,j=y;i<=y;i++,j--){
+	    if(i%2!=0)System.out.print(i + " ");
+	    if(j%2==0)System.out.print(j + " ");
+	}
+
+	}
+}
