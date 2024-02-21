@@ -1,0 +1,10 @@
+import java.util.*;
+public class Hello {
+
+    public static void main(String[] args) {
+		Scanner input=new Scanner(System.in);
+		float f=input.nextFloat();
+		System.out.printf("The price is %.2f",f);
+
+	}
+}
