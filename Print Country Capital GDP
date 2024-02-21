@@ -1,0 +1,12 @@
+import java.util.*;
+public class Hello {
+
+    public static void main(String[] args) {
+	Scanner input=new Scanner(System.in);
+	String str1=input.nextLine();
+	String str2=input.nextLine();
+	float f=input.nextFloat();
+	System.out.print("The capital of "+str1+" is "+str2+" and it's GDP is "+String.format("%.2f",f));
+
+	}
+}
