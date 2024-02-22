@@ -1,0 +1,15 @@
+import java.util.*;
+public class Hello {
+
+    public static void main(String[] args) {
+		Scanner input=new Scanner(System.in);
+		int x=input.nextInt();
+		int y=input.nextInt();
+		int sum=0;
+		while(y-->0){
+		    sum +=x;
+		    x +=200;
+		}
+		System.out.print(sum);
+    }
+}
