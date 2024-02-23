@@ -1,0 +1,15 @@
+import java.util.*;
+public class Hello {
+
+    public static void main(String[] args) {
+   Scanner input=new Scanner(System.in);
+   int n=input.nextInt();
+   int m=input.nextInt();
+   int res=n;
+   while(m-->0){
+       System.out.print(res+" ");
+       res +=n;
+   }
+
+	}
+}
