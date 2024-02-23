@@ -1,0 +1,16 @@
+import java.util.*;
+public class Hello {
+
+    public static void main(String[] args) {
+	Scanner input=new Scanner(System.in);
+	int n=input.nextInt();
+	int m=input.nextInt();
+	int sum=0;
+	while(n<=m){
+	  if(n%2==0)  sum +=n;
+	  n++;
+	}
+	System.out.print(sum);
+
+	}
+}
