@@ -1,0 +1,19 @@
+import java.util.*;
+public class Hello {
+
+    public static void main(String[] args) {
+	Scanner input=new Scanner(System.in);
+	int n=input.nextInt();
+	int x=n;
+	input.nextLine();
+	int first=0;
+	int second=0;
+	while(x-- >0){
+	    String[] str=input.nextLine().split(" ");
+	    first +=Integer.parseInt(str[0]);
+	    second +=Integer.parseInt(str[1]);
+	}
+	System.out.printf("%.2f\n%.2f",(float)first/n,(float)second/n);
+
+	}
+}
