@@ -1,0 +1,23 @@
+import java.util.*;
+public class Hello {
+
+    public static void main(String[] args) {
+		Scanner input=new Scanner(System.in);
+		int n=input.nextInt();
+		input.nextLine();
+		int val=0;
+		String str="";
+		String batsman="";
+		while(n-->0){
+		     batsman=input.nextLine();
+		    String[] arr=batsman.split(",");
+		    int x=Integer.parseInt(arr[1]);
+		    if(x>val){
+		        val=x;
+		        str=arr[0];
+		    }
+		}
+		System.out.print(str);
+
+	}
+}
