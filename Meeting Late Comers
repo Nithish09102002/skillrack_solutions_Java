@@ -1,0 +1,19 @@
+import java.util.*;
+public class Hello {
+
+    public static void main(String[] args) {
+	Scanner input=new Scanner(System.in);
+	String[] str=input.nextLine().split(" ");
+	int count=0;
+	for(String str1:str){
+	    String[] nums=str1.split(":");
+	    int num1=Integer.parseInt(nums[0]);
+	    int num2=Integer.parseInt(nums[1]);
+	    if(num1==10 && num2>0){
+	        count++;
+	    }
+	    if(num1>10) count++;
+	}
+System.out.print(count);
+	}
+}
