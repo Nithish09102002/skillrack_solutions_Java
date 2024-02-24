@@ -1,0 +1,22 @@
+import java.util.*;
+public class Hello {
+
+    public static void main(String[] args) {
+	Scanner input=new Scanner(System.in);
+	int n=input.nextInt();
+	input.nextLine();
+	String name="";
+	int sum=0;
+	while(n-->0){
+	    String str=input.nextLine();
+	    String[] arr=str.split(":");
+	    int tot=Integer.parseInt(arr[1])+Integer.parseInt(arr[2])+Integer.parseInt(arr[3]);
+	    if(tot>sum){
+	        sum=tot;
+	        name=arr[0];
+	    }
+	}
+	System.out.print(name)
+
+	}
+}
