@@ -1,0 +1,20 @@
+import java.util.*;
+public class Hello {
+
+    public static void main(String[] args) {
+	Scanner input=new Scanner(System.in);
+	String[] str=input.nextLine().split(" ");
+	Float min=Float.MAX_VALUE;
+	String name="";
+	for(String str1:str){
+	    String[] arr=str1.split("@");
+	    float val=Float.parseFloat(arr[1]);
+	    if(min>val){
+	        min=val;
+	        name=arr[0];
+	    }
+	}
+	System.out.print(name);
+
+	}
+}
