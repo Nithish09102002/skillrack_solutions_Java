@@ -1,0 +1,16 @@
+import java.util.*;
+public class Hello {
+
+    public static void main(String[] args) {
+	Scanner input=new Scanner(System.in);
+	String str=input.nextLine();
+	char[] arr=str.toCharArray();
+	for(char ch:arr){
+	    int num=(int)ch;
+	    if((num>=65 && num<=90)||(num>=97 && num<=122)){
+	        System.out.print(ch);
+	    }
+	}
+
+	}
+}
