@@ -1,0 +1,21 @@
+import java.util.*;
+public class Hello {
+
+    public static void main(String[] args) {
+		Scanner input=new Scanner(System.in);
+		int n=input.nextInt();
+		long x=0;
+		long y=1;
+		if(n>=1)System.out.print(x+" ");
+		if(n>=2)System.out.print(y+" ");
+		if(n>=3) {
+		    for(int i=3;i<=n;i++){
+		        long z=x+y;
+		        System.out.print(z+" ");
+		        x=y;
+		        y=z;
+		    }
+		}
+
+	}
+}
