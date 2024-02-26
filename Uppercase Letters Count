@@ -1,0 +1,17 @@
+import java.util.*;
+public class Hello {
+
+    public static void main(String[] args) {
+	Scanner input=new Scanner(System.in);
+	String str=input.nextLine();
+	int count=0;
+	for(int i=0;i<str.length();i++){
+	    int val=(int)str.charAt(i);
+	    if(val>=65 && 90>=val){
+	        count++;
+	    }
+	}
+	System.out.print(count);
+
+	}
+}
