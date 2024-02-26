@@ -1,0 +1,17 @@
+import java.util.*;
+public class Hello {
+
+    public static void main(String[] args) {
+	Scanner input=new Scanner(System.in);
+	String[] arr=input.nextLine().split(" ");
+	int distance=0;
+	int time=0;
+	for(String str:arr){
+	    String[] str1=str.split("@");
+	     distance +=Integer.parseInt(str1[0]);
+	     time +=Integer.parseInt(str1[1]);
+	}
+	System.out.printf("%.2f kmph",(float)distance/time);
+
+	}
+}
