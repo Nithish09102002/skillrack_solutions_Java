@@ -1,0 +1,15 @@
+import java.util.*;
+public class Hello {
+
+    public static void main(String[] args) {
+Scanner input=new Scanner(System.in);
+int x=input.nextInt();
+int y=input.nextInt();
+int res=0;
+for(int i=1;i<=x;i++){
+    if(x%i==0 && y%i==0)res=i;
+}
+System.out.print(res);
+
+	}
+}
