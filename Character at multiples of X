@@ -1,0 +1,13 @@
+import java.util.*;
+public class Hello {
+
+    public static void main(String[] args) {
+	Scanner input=new Scanner(System.in);
+	String str=input.nextLine();
+	int n=input.nextInt();
+	for(int i=n;i<=str.length();i++){
+	    if(i%n==0)System.out.print(str.charAt(i-1));
+	}
+
+	}
+}
