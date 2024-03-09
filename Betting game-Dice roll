@@ -1,0 +1,19 @@
+import java.util.*;
+public class Hello {
+
+    public static void main(String[] args) {
+	Scanner input=new Scanner(System.in);
+	String[] arr=input.nextLine().split(" ");
+	int x=input.nextInt();
+	int y=input.nextInt();
+	int gain=0;
+	int loss=0;
+	for(String str:arr){
+	    int n=Integer.parseInt(str);
+	    if(n%2==0) loss +=-y;
+	    else gain +=x;
+	}
+	System.out.print(gain+loss);
+
+	}
+}
