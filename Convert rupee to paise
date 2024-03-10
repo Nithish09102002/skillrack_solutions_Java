@@ -1,0 +1,10 @@
+import java.util.*;
+public class Hello {
+
+    public static void main(String[] args) {
+		Scanner input=new Scanner(System.in);
+		float n=input.nextFloat();
+		System.out.print(Math.round((float)n*100));
+
+	}
+}
