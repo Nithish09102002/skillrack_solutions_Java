@@ -1,0 +1,19 @@
+import java.util.*;
+public class Hello {
+
+    public static void main(String[] args) {
+		Scanner input=new Scanner(System.in);
+		String str=input.nextLine();
+		String[] str1=str.split("[aAsSdDmM]");
+		int x=Integer.parseInt(str1[0]);
+		int y=Integer.parseInt(str1[1]);
+		if(str.contains("A")||str.contains("a")){
+		    System.out.print(x+y);
+		}else if(str.contains("s")||str.contains("S")){
+		    System.out.print(x-y);
+		}else if(str.contains("m")||str.contains("M")){
+		    System.out.print(x*y);
+		}else System.out.print(x/y);
+
+	}
+}
