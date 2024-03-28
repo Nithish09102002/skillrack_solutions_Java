@@ -1,0 +1,21 @@
+import java.util.*;
+public class Hello {
+
+    public static void main(String[] args) {
+		Scanner input=new Scanner(System.in);
+		String str=input.nextLine();
+		char ch1=input.next().charAt(0);
+		char ch2=input.next().charAt(0);
+		int count=0;
+		for(int i=0;i<str.length()-1;i++){
+		    if(str.charAt(i)==ch1){
+		        if(str.charAt(i+1)==ch2){
+		            count++;
+		        }else {
+		            continue;
+		        }
+		    }else continue;
+		}
+		System.out.print(count);
+	}
+}
