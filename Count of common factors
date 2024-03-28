@@ -1,0 +1,30 @@
+import java.util.*;
+public class Hello {
+
+    public static void main(String[] args) {
+	Scanner input=new Scanner(System.in);
+	int n=input.nextInt();
+	int[] nums=new int[n];
+	int max=0;
+	for(int i=0;i<n;i++){
+	    nums[i]=input.nextInt();
+	    if(max<nums[i])max=nums[i];
+	}
+	int count=0;
+	for(int i=2;i<max;i++){
+	    boolean flag=false;
+	    for(int j=0;j<n;j++){
+	        if(nums[j]%i!=0){
+	            flag=false;
+	            break;
+	        }else{
+	            flag=true;
+	        }
+	    }
+	    if(flag)count++;
+	}
+	System.out.print(count);
+	
+
+	}
+}
