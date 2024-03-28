@@ -1,0 +1,16 @@
+import java.util.*;
+public class Hello {
+
+    public static void main(String[] args) {
+		Scanner input=new Scanner(System.in);
+		String[] str=input.nextLine().split(" ");
+		int n=input.nextInt();
+		int diff=Integer.parseInt(str[1])-Integer.parseInt(str[0]);
+		int result=0;
+		int third=Integer.parseInt(str[2]);
+		for(int i=3;i<n;i++){
+		    third +=diff;
+		}
+		System.out.print(third);
+	}
+}
