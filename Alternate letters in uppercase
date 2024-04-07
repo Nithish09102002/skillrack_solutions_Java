@@ -1,0 +1,18 @@
+import java.util.*;
+public class Hello {
+
+    public static void main(String[] args) {
+	Scanner input=new Scanner(System.in);
+	String[] str=input.nextLine().split(" ");
+     for(String val:str){
+         String lower=val.toLowerCase();
+         System.out.print(Character.toUpperCase(lower.charAt(0)));
+         for(int i=1;i<val.length();i++){
+             if(i%2==0){
+                 System.out.print(Character.toUpperCase(lower.charAt(i)));
+             }else System.out.print(lower.charAt(i));
+         }
+         System.out.print(" ");
+     }
+	}
+}
