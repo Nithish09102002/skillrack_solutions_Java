@@ -1,0 +1,16 @@
+import java.util.*;
+public class Hello {
+
+    public static void main(String[] args) {
+	Scanner input=new Scanner(System.in);
+	String str=input.nextLine();
+	outer:
+    for(int i=str.length()-1;i>1;i--){
+        for(int j=i-1;j>0;j--){
+            if(str.charAt(i)==str.charAt(j)){
+                System.out.print(str.charAt(i));
+                break outer;
+            }
+        }
+    }
+	}
