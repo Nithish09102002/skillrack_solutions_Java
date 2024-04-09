@@ -1,0 +1,13 @@
+import java.util.*;
+public class Hello {
+
+    public static void main(String[] args) {
+	Scanner input=new Scanner(System.in);
+	String str1=input.nextLine();
+	String str2=input.nextLine();
+	if((int)str1.charAt(0)<(int)str2.charAt(0)){
+	    System.out.print(str1.concat(str2));
+	}else System.out.print(str2.concat(str1));
+
+	}
+}
