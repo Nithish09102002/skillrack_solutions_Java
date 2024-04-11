@@ -1,0 +1,21 @@
+import java.util.*;
+public class Hello {
+
+    public static void main(String[] args) {
+	Scanner input=new Scanner(System.in);
+	String str=input.nextLine();
+	int k=0;
+	int l=str.length()-1;
+	for(int i=0;i<str.length();i++){
+	    for(int j=0;j<str.length();j++){
+	       if(j==l || j==k){
+	           System.out.print(str.charAt(j));
+	       }else System.out.print(" ");
+	    }
+	    System.out.println();
+	    k++;
+	    l--;
+	}
+
+	}
+}
