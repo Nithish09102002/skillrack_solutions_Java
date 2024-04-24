@@ -1,0 +1,15 @@
+import java.util.*;
+public class Hello {
+
+    public static void main(String[] args) {
+	Scanner input=new Scanner(System.in);
+	String[] str=input.nextLine().split(" ");
+	int sum=0;
+	for(String val:str){
+	   String[] arr=val.split("[\\,\\.]");
+	   if(arr[0].equals("the") || arr[0].equals("a") || arr[0].equals("an")) sum++;
+	   //System.out.print(arr[0]);
+	}
+	System.out.print(sum);
+	}
+}
