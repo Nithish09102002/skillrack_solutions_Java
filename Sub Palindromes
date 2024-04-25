@@ -1,0 +1,30 @@
+import java.util.*;
+public class Hello {
+
+    public static void main(String[] args) {
+	Scanner input=new Scanner(System.in);
+	String str=input.nextLine();
+
+	int sum=0;
+	for(int x=1;x<str.length();x++){
+	for(int i=0;i<str.length()-x;i++){
+	   int y=i+x;
+	   boolean flag=false;
+	for(int j=i;j<y;j++){
+	    if(str.charAt(j)==str.charAt(y)){
+	        flag=true;
+	       // System.out.print(str.charAt(j)+" "+str.charAt(y)+"-"+x+"=");
+	    }else{ flag=false;
+	    break;
+	    }
+	    y--;
+	}
+	if(flag){
+	    sum++;
+	}
+	}
+	}
+	System.out.print(sum);
+
+	}
+}
