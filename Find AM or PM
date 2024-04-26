@@ -1,0 +1,16 @@
+import java.util.*;
+public class Hello {
+
+    public static void main(String[] args) {
+	Scanner input=new Scanner(System.in);
+	String[] str=input.nextLine().split(":");
+	int hr=Integer.parseInt(str[0]);
+	int min=Integer.parseInt(str[1]);
+	if(hr<12 && hr>=0){
+	    System.out.print("AM");
+	}else if(hr>=12 && hr <=24){
+	    System.out.print("PM");
+	}else System.out.print("INVALIDINPUT");
+
+	}
+}
