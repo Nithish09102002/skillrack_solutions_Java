@@ -1,0 +1,19 @@
+import java.util.*;
+public class Hello {
+
+    public static void main(String[] args) {
+	Scanner input=new Scanner(System.in);
+	int n=input.nextInt();
+	int y=n;
+	for(int i=1;i<=n;i++){
+	    int x=i;
+	    for(int j=i;j<=n;j++){
+	        System.out.print(x+" ");
+	        x +=y--;
+	    }
+	    y=n;
+	    System.out.println();
+	}
+
+	}
+}
