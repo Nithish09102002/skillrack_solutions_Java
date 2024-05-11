@@ -1,0 +1,25 @@
+import java.util.*;
+public class Hello {
+
+    public static void main(String[] args) {
+	Scanner input=new Scanner(System.in);
+	int n=input.nextInt();
+	int val=0;
+	for(int i=1;i<=n;i++){
+	    val +=i;
+	}
+	
+	for(int i=1;i<=n;i++){
+	    int row=val;
+	    int x=n;
+	    for(int j=i;j<=n;j++){
+	        System.out.print(row+" ");
+	         row = row-x;
+	         x--;
+	    }
+	    System.out.println();
+	    val--;
+	}
+
+	}
+}
