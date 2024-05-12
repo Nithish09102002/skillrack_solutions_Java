@@ -1,0 +1,21 @@
+import java.util.*;
+public class Hello {
+    static int recursion(int n){
+        int sum=0;
+        while(n>0){
+            sum +=n%10;
+            n /=10;
+        }
+        return sum;
+    }
+
+    public static void main(String[] args) {
+	Scanner input=new Scanner(System.in);
+	int n=input.nextInt();
+	while(n>=9){
+	   n= recursion(n);
+	}
+	System.out.print(n);
+
+	}
+}
