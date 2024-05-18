@@ -1,0 +1,17 @@
+import java.util.*;
+public class Hello {
+
+    public static void main(String[] args) {
+	Scanner input=new Scanner(System.in);
+	String str=input.nextLine();
+	int x=input.nextInt()-1;
+	int y=input.nextInt()-1;
+	while(y>str.length()){
+	 y=y-str.length();
+	}
+	if(str.charAt(x)==str.charAt(y)){
+	    System.out.print("YES");
+	}else System.out.print("NO");
+
+	}
+}
