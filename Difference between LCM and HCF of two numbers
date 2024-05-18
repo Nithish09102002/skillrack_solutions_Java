@@ -1,0 +1,25 @@
+import java.util.*;
+public class Hello {
+
+    public static void main(String[] args) {
+	Scanner input=new Scanner(System.in);
+	int x=input.nextInt();
+	int y=input.nextInt();
+	int lcm=1;
+	int hcf=0;
+	for(int i=2;;i++){
+	  
+	        if(x%i==0 && y%i==0){
+	            lcm=i;
+	        
+	        }
+	    
+	    if(i%x==0 && i%y==0){
+	        hcf=i;
+	        break;
+	    }
+	}
+	System.out.print(hcf-lcm);
+
+	}
+}
