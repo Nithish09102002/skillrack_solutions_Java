@@ -1,0 +1,28 @@
+import java.util.*;
+import java.lang.*;
+public class Hello {
+    
+    static int baseNumber(int n,int b){
+       int sum=0;
+        int i=0;
+        while(n>0){
+          int val=(int)Math.pow(b,i);
+          int digit=n%10;
+          sum=sum+(digit*val);
+            i++;
+            n /=10;
+        }
+        return sum;
+    }
+
+    public static void main(String[] args) {
+	Scanner input=new Scanner(System.in);
+	int base =input.nextInt();
+	input.nextLine();
+	String[] str=input.nextLine().split(" ");
+	int x=Integer.parseInt(str[0]);
+	int y=Integer.parseInt(str[1]);
+    System.out.println(baseNumber(x,base)+baseNumber(y,base));
+    
+	}
+}
