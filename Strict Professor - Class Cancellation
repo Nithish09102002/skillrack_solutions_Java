@@ -1,0 +1,30 @@
+import java.util.*;
+public class Hello {
+
+    public static void main(String[] args) {
+	Scanner input=new Scanner(System.in);
+	int n=input.nextInt();
+	int m=input.nextInt();
+	input.nextLine();
+	String[] str=input.nextLine().split(":");
+	int hr=Integer.parseInt(str[0]);
+	int min=Integer.parseInt(str[1]);
+	int count=0;
+	
+	    String[] arr=input.nextLine().split(" ");
+	    for(String str1:arr){
+	        String[] x=str1.split(":");
+	    
+	    int hr1=Integer.parseInt(x[0]);
+	    int min1=Integer.parseInt(x[1]);
+	    if(hr>hr1 ||(hr==hr1 && min>=min1)){
+	        count++;
+	    }
+	    }
+	   // System.out.print(count);
+	if(count<m){
+	    System.out.print("Yes");
+	}else System.out.print("No");
+
+	}
+}
